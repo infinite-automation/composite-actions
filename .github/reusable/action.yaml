@@ -1,0 +1,10 @@
+name: simple build action
+runs:
+  using: "composite"
+  steps:
+    - name: show message
+      shell: bash
+      run: echo "starting the build"
+    - name: check file
+      shell: bash
+      run: ls
